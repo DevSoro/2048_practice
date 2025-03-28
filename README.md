@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 2048 Game Clone
+
+A modern implementation of the classic 2048 puzzle game built with Next.js and React.
+
+![2048 Game](https://picsum.photos/800/400)
+
+## Features
+
+- Classic 2048 gameplay with smooth animations
+- Responsive design that works on both desktop and mobile devices
+- Local storage to save best scores
+- Keyboard controls (arrow keys) and touch/mouse swipe support
+- Game state management with React Context API
+- Clean, modern UI built with Tailwind CSS
+
+## Technologies Used
+
+- [Next.js 15](https://nextjs.org/) - React framework with App Router
+- [React 19](https://react.dev/) - UI library
+- [TypeScript](https://www.typescriptlang.org/) - Type-safe JavaScript
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [React Hook Form](https://react-hook-form.com/) - Form handling
+- [Zod](https://zod.dev/) - Schema validation
+- [React Use](https://github.com/streamich/react-use) - React hooks collection
+- [Shadcn UI](https://ui.shadcn.com/) - Component library
+- [Lucide React](https://lucide.dev/) - Icon library
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 20.x or later
+- npm 10.x or later
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/2048_clone.git
+cd 2048_clone
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## How to Play
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Use arrow keys (←, →, ↑, ↓) to move tiles
+- When two tiles with the same number touch, they merge into one
+- Create a tile with the number 2048 to win the game
+- If the board fills up with no possible moves, the game is over
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/             # Next.js App Router
+├── components/ui/   # Reusable UI components
+├── features/
+│   └── game/        # Game-specific feature code
+│       ├── components/  # Game UI components
+│       ├── hooks/       # Game logic hooks
+│       └── GameProvider.tsx # Game state management
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The easiest way to deploy this app is using the [Vercel Platform](https://vercel.com/new).
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Acknowledgements
+
+- Original 2048 game by [Gabriele Cirulli](https://github.com/gabrielecirulli/2048)
+- Built with inspiration from various 2048 implementations
