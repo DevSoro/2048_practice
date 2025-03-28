@@ -2,8 +2,6 @@
 
 A modern implementation of the classic 2048 puzzle game built with Next.js and React.
 
-![2048 Game](https://picsum.photos/800/400)
-
 ## Features
 
 - Classic 2048 gameplay with smooth animations
